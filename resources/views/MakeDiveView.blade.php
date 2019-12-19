@@ -5,11 +5,11 @@
     {!! Form::open(['url' => '/home/test/test2']) !!}
         <div class="form-group">
             {{Form::label('locatie', 'Locatie')}}
-            {{Form::text('locatie', '', ['class' => 'form-control', 'placeholder' => 'Body Test'])}}
+            {{Form::text('locatie', '', ['class' => 'form-control', 'placeholder' => 'locatie'])}}
         </div>
         <div class="form-group">
             {{Form::label('duur', 'Duur')}}
-            {{Form::text('duur', '', ['class' => 'form-control', 'placeholder' => 'Body Test'])}}
+            {{Form::text('duur', '', ['class' => 'form-control', 'placeholder' => 'duur'])}}
         </div>
         {{Form::submit('Submit', ['class'])}}
     {!! Form::close() !!}
