@@ -37,7 +37,7 @@
                             </a>     
                         </li>                        
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/home/test') }}">
+                            <a class="nav-link" href="{{ url('/dives') }}">
                                Maak Duik
                             </a>     
                         </li>

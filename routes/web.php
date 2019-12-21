@@ -18,8 +18,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/home/test', 'MaakDiveController@index');
-Route::post('/home/test/test2', 'MaakDiveController@store');
+//Route::get('/home/test', 'MaakDiveController@index');
+//Route::post('/home/test/test2', 'MaakDiveController@store');
+
+Route::resource('dives', 'DivesController');
 
 /*
 Auth::routes();

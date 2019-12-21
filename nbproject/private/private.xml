@@ -4,21 +4,12 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/vanca/ProjectCloud_LeanderVanCappellen/resources/views/MakeDiveView.blade.php</file>
-            <file>file:/C:/Users/vanca/ProjectCloud_LeanderVanCappellen/resources/views/inc/messages.blade.php</file>
-            <file>file:/C:/Users/vanca/ProjectCloud_LeanderVanCappellen/routes/console.php</file>
-            <file>file:/C:/Users/vanca/ProjectCloud_LeanderVanCappellen/routes/channels.php</file>
-            <file>file:/C:/Users/vanca/ProjectCloud_LeanderVanCappellen/app/Http/Controllers/Auth/RegisterController.php</file>
-            <file>file:/C:/Users/vanca/ProjectCloud_LeanderVanCappellen/resources/views/welcome.blade.php</file>
-            <file>file:/C:/Users/vanca/ProjectCloud_LeanderVanCappellen/resources/views/layouts/app.blade.php</file>
-            <file>file:/C:/Users/vanca/ProjectCloud_LeanderVanCappellen/app/User.php</file>
-            <file>file:/C:/Users/vanca/ProjectCloud_LeanderVanCappellen/app/Http/Controllers/HomeController.php</file>
-            <file>file:/C:/Users/vanca/ProjectCloud_LeanderVanCappellen/app/Http/Controllers/Controller.php</file>
+            <file>file:/C:/Users/vanca/ProjectCloud_LeanderVanCappellen/app/Http/Controllers/DivesController.php</file>
+            <file>file:/C:/Users/vanca/ProjectCloud_LeanderVanCappellen/app/Dive.php</file>
             <file>file:/C:/Users/vanca/ProjectCloud_LeanderVanCappellen/routes/web.php</file>
-            <file>file:/C:/Users/vanca/ProjectCloud_LeanderVanCappellen/resources/views/auth/login.blade.php</file>
-            <file>file:/C:/Users/vanca/ProjectCloud_LeanderVanCappellen/resources/views/home.blade.php</file>
-            <file>file:/C:/Users/vanca/ProjectCloud_LeanderVanCappellen/app/Http/Controllers/MaakDiveController.php</file>
-            <file>file:/C:/Users/vanca/ProjectCloud_LeanderVanCappellen/composer.json</file>
-            <file>file:/C:/Users/vanca/ProjectCloud_LeanderVanCappellen/routes/api.php</file>
+            <file>file:/C:/Users/vanca/ProjectCloud_LeanderVanCappellen/app/Providers/AppServiceProvider.php</file>
+            <file>file:/C:/Users/vanca/ProjectCloud_LeanderVanCappellen/database/migrations/2019_12_21_135432_create_dives_table.php</file>
+            <file>file:/C:/Users/vanca/ProjectCloud_LeanderVanCappellen/resources/views/layouts/app.blade.php</file>
         </group>
     </open-files>
 </project-private>
