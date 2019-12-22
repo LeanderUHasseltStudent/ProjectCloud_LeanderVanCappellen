@@ -15,13 +15,11 @@ class CreateDivesTable extends Migration
     {
         Schema::create('dives', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('userid');
+            $table->integer('user_id');
             $table->date('datum');
             $table->string('locatie');
             $table->integer('duur');
             $table->integer('diepte');
-            $table->String('duikBuddy1');
-            $table->String('duikBuddy2');
             $table->String('opmerking');
             $table->timestamps();
         });

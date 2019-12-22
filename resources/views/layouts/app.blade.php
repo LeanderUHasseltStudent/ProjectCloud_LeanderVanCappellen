@@ -32,12 +32,12 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/home') }}">
+                            <a class="nav-link" href="{{ url('/dives') }}">
                                Duikboek
                             </a>     
                         </li>                        
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/dives') }}">
+                            <a class="nav-link" href="{{ url('/dives/create') }}">
                                Maak Duik
                             </a>     
                         </li>

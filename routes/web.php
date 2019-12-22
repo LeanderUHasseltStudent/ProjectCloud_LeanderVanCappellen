@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/dives', 'DivesController@index')->name('home');
 //Route::get('/home/test', 'MaakDiveController@index');
 //Route::post('/home/test/test2', 'MaakDiveController@store');
 
