@@ -22,7 +22,9 @@ Auth::routes();
 //Route::post('/home/test/test2', 'MaakDiveController@store');
 
 Route::resource('dives', 'DivesController');
-
+Route::resource('reviews', 'ReviewController');
+Route::post('/home/review/create', 'ReviewController@postReview');
+Route::post('/home/review', 'ReviewController@getReview');
 /*
 Auth::routes();
 

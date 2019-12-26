@@ -41,6 +41,11 @@
                                Maak Duik
                             </a>     
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url('/reviews') }}">
+                               Reviews
+                            </a>     
+                        </li>                        
                     </ul>
 
                     <!-- Right Side Of Navbar -->
