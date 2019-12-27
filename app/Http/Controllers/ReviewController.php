@@ -59,12 +59,7 @@ class ReviewController extends Controller
             ]
         ]; 
         $response = $client->post("/getReview", $options)->getBody();
-        
         $response_dec = json_decode($response);
-        
-        foreach($response_dec as $item) { //foreach element in $arr
-            
-        }
         return view('review')->with("reviews", $response_dec);
             
     }

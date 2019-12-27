@@ -25,6 +25,9 @@ Route::resource('dives', 'DivesController');
 Route::resource('reviews', 'ReviewController');
 Route::post('/home/review/create', 'ReviewController@postReview');
 Route::post('/home/review', 'ReviewController@getReview');
+Route::get('/gradesBook', 'GradesBookController@index');
+
+
 /*
 Auth::routes();
 
