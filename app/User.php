@@ -41,7 +41,7 @@ class User extends Authenticatable
         return $this->hasMany('App\Dive');
     }
     
-    public function gradesBooks(){
-        return $this->belongsTo('App\gradesBook');
+    public function grades_books(){
+        return $this->hasOne('App\GradesBook');
     }
 }

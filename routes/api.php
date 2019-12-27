@@ -13,7 +13,4 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/diplomas', function(){
-    return hello;
-    
-});
+Route::get('/getGradesBook/{user_id}', 'GradesBookController@getGrades');

@@ -16,15 +16,15 @@ class CreateGradesBooksTable extends Migration
         Schema::create('grades_books', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('user_id');
-            $table->boolean('1*');
-            $table->boolean('2*');
-            $table->boolean('3*');
-            $table->boolean('4*');
-            $table->boolean('Basis-Nitrox');
-            $table->boolean('Advanced-Nitrox');
-            $table->boolean('Basis-Trimix');
-            $table->boolean('1*I');
-            $table->boolean('2*I');
+            $table->boolean('_1ster');
+            $table->boolean('_2ster');
+            $table->boolean('_3ster');
+            $table->boolean('_4ster');
+            $table->boolean('_1sterI');
+            $table->boolean('_2sterI');
+            $table->boolean('basicNitrox');
+            $table->boolean('advancedNitrox');
+            $table->boolean('basicTrimix');
             $table->timestamps();
         });
     }

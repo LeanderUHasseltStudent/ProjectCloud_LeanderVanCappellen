@@ -45,7 +45,12 @@
                             <a class="nav-link" href="{{ url('/reviews') }}">
                                Reviews
                             </a>     
-                        </li>                        
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url('/gradesBook') }}">
+                               Grades
+                            </a>     
+                        </li>  
                     </ul>
 
                     <!-- Right Side Of Navbar -->
