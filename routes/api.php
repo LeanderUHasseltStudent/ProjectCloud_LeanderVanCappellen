@@ -13,4 +13,4 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/getGradesBook/{user_id}', 'GradesBookController@getGrades');
+Route::get('/getGradesBook', 'ApiGradesBookController@getGrades');

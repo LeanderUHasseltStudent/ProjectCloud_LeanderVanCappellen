@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Dive;
 use App\User;
+use GuzzleHttp\Client;
+use SoapClient;
 
 class DivesController extends Controller
 {
@@ -22,8 +24,21 @@ class DivesController extends Controller
     public function index()
     {
         $user_id = auth()->user()->id;
+        $client = new \SoapClient('http://localhost:51659/WebService1.asmx?wsdl');
+        $aantalDuiken;
+        $duikuren;
+        
+        $response = $client->getAantalDuiken(array("user"=>$user_id));
+        foreach($response as $resp){
+            $aantalDuiken = $resp;     
+        }
+        $response = $client->getDuikuren(array("user"=>$user_id));
+        foreach($response as $resp){
+            $duikuren = $resp;     
+        }
+
         $user = User::find($user_id);
-        return view('home')->with('dives', $user->dives);
+        return view('home')->with('dives', $user->dives)->with('aantalDuiken', $aantalDuiken)->with('aantalDuikuren', $duikuren);
     }
 
     /**
