@@ -32,17 +32,11 @@ class GradesBookController extends Controller
             $gradesBook->basicTrimix = false;
             $gradesBook->save();
         }
-       $client = new \GuzzleHttp\Client(["base_uri" => "http://127.0.0.1:8001/"]);
-       $options = [
-            'json' => [
-            "id" => $user_id
-            ]
-        ];
-        $response = $client->post("/api/getGradesBook", $options)->getBody();
-        return $response;
-
-        $user = User::find($user_id);
-        return view('GradesBook');//->with('gradesbook', $user->grades_books);
+        $client = new \GuzzleHttp\Client;
+        $request = $client->post("http://127.0.0.1:8001/api/getGradesBook/$user_id");
+        $response = $request->getBody();
+        $dec = json_decode($response);
+        return view('GradesBook')->with('gradesbook', $dec);
     }
     
     public function update()
@@ -52,23 +46,19 @@ class GradesBookController extends Controller
     
     public function submitUpdate(Request $request)
     {
+        if($request['1_ster'] == null){$eenster = 0;} else{$eenster = $request['1_ster'];}
+        if($request['2_ster'] == null){$tweester = 0;} else{$tweester = $request['2_ster'];}
+        if($request['3_ster'] == null){$driester = 0;} else{$driester = $request['3_ster'];}
+        if($request['4_ster'] == null){$vierster = 0;} else{$vierster = $request['4_ster'];}
+        if($request['1_ster_instructeur'] == null){$eensterI = 0;} else{ $eensterI = $request['1_ster_instructeur'];}
+        if($request['2_ster_instructeur'] == null){$tweesterI = 0;} else{$tweesterI = $request['2_ster_instructeur'];}
+        if($request['basis_nitrox'] == null){$basicNitrox = 0;} else{$basicNitrox = $request['basis_nitrox'];}
+        if($request['geavanceerde_nitrox'] == null){$advancedNitrox = 0;} else{$advancedNitrox = $request['geavanceerde_nitrox'];}
+        if($request['basis_trimix'] == null){$basicTrimix = 0;} else{$basicTrimix = $request['basis_trimix'];}
+
         $user_id = auth()->user()->id;
-        $client = new \GuzzleHttp\Client(["base_uri" => "http://127.0.0.1:8001/api/"]);
-        $options = [
-            'json' => [
-            "id" => $user_id,
-            "1_ster" => $request['1_ster'],
-            "2_ster" => $request['2_ster'],
-            "3_ster" => $request['3_ster'],
-            "4_ster" => $request['4_ster'],
-            "1_ster_instructeur" => $request['1_ster_instructeur'],
-            "2_ster_instructeur" => $request['2_ster_instructeur'],
-            "basis_nitrox" => $request['basis_nitrox'],
-            "geavanceerde_nitrox" => $request['geavanceerde_nitrox'],
-            "basis_trimix" => $request['basis_trimix'],
-            ]
-        ];
-        $response = $client->post("/postGradesBook", $options)->getBody();
+        $client = new \GuzzleHttp\Client;
+        $request = $client->post("http://127.0.0.1:8001/api/postGradesBook/$user_id/$eenster/$tweester/$driester/$vierster/$eensterI/$tweesterI/$basicNitrox/$advancedNitrox/$basicTrimix");
         return redirect('/dives')->with('success', 'Duik graden geupdate');
     }
     

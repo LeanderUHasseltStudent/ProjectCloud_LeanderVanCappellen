@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<input type="hidden" name="1 ster" value="0">
 <div class="row justify-content-center">
     <div class="col-md-8">
         <div class="card">

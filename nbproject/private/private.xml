@@ -13,8 +13,13 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/vanca/ProjectCloud_LeanderVanCappellen/app/Http/Controllers/DivesController.php</file>
-            <file>file:/C:/Users/vanca/ProjectCloud_LeanderVanCappellen/resources/views/EditDive.blade.php</file>
+            <file>file:/C:/Users/vanca/ProjectCloud_LeanderVanCappellen/.env</file>
+            <file>file:/C:/Users/vanca/ProjectCloud_LeanderVanCappellen/app/Http/Controllers/ReviewController.php</file>
+            <file>file:/C:/Users/vanca/ProjectCloud_LeanderVanCappellen/resources/views/Dive.blade.php</file>
+            <file>file:/C:/Users/vanca/ProjectCloud_LeanderVanCappellen/resources/views/CreateGradesBook.blade.php</file>
             <file>file:/C:/Users/vanca/ProjectCloud_LeanderVanCappellen/app/Http/Controllers/GradesBookController.php</file>
+            <file>file:/C:/Users/vanca/ProjectCloud_LeanderVanCappellen/resources/views/Review.blade.php</file>
+            <file>file:/C:/Users/vanca/ProjectCloud_LeanderVanCappellen/resources/views/GradesBook.blade.php</file>
         </group>
     </open-files>
 </project-private>

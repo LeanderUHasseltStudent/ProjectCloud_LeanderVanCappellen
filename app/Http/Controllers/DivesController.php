@@ -24,7 +24,7 @@ class DivesController extends Controller
     public function index()
     {
         $user_id = auth()->user()->id;
-        $client = new \SoapClient('http://localhost:51659/WebService1.asmx?wsdl');
+        $client = new \SoapClient('http://soapsevice-dev-leandervancappellen.us-east-2.elasticbeanstalk.com/WebService1.asmx?wsdl');
         $aantalDuiken;
         $duikuren;
         
