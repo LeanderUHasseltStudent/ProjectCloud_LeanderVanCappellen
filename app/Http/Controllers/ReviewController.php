@@ -61,6 +61,11 @@ class ReviewController extends Controller
         $response = $client->post("/getReview", $options)->getBody();
         $response_dec = json_decode($response);
         return view('review')->with("reviews", $response_dec);
-            
+    }
+    
+    public function zieKaart(Request $request)
+    {
+        
+        return view('ViewMap')->with("Locatie", $request->input('locatie'));
     }
 }

@@ -28,6 +28,8 @@ Route::post('/home/review', 'ReviewController@getReview');
 Route::get('/gradesBook', 'GradesBookController@index');
 Route::get('/gradesBook/update', 'GradesBookController@update');
 Route::post('/gradesBook/update/submit', 'GradesBookController@submitUpdate');
+Route::post('/reviews/createReview/lookMap', 'ReviewController@zieKaart');
+
 
 /*
 Auth::routes();
