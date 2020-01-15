@@ -1,0 +1,16 @@
+C:\Users\vanca\Desktop\Soap Sevice\bin\Soap Sevice.dll.config
+C:\Users\vanca\Desktop\Soap Sevice\bin\Soap Sevice.dll
+C:\Users\vanca\Desktop\Soap Sevice\bin\Soap Sevice.pdb
+C:\Users\vanca\Desktop\Soap Sevice\obj\Debug\Soap Sevice.csprojAssemblyReference.cache
+C:\Users\vanca\Desktop\Soap Sevice\obj\Debug\Soap Sevice.dll
+C:\Users\vanca\Desktop\Soap Sevice\obj\Debug\Soap Sevice.pdb
+C:\Users\vanca\Desktop\Soap Sevice\bin\Newtonsoft.Json.dll
+C:\Users\vanca\Desktop\Soap Sevice\bin\Newtonsoft.Json.xml
+C:\Users\vanca\Desktop\Soap Sevice\obj\Debug\Soap Sevice.csproj.CopyComplete
+C:\Users\vanca\Desktop\Soap Sevice\bin\BouncyCastle.Crypto.dll
+C:\Users\vanca\Desktop\Soap Sevice\bin\Google.Protobuf.dll
+C:\Users\vanca\Desktop\Soap Sevice\bin\MySql.Data.dll
+C:\Users\vanca\Desktop\Soap Sevice\bin\Renci.SshNet.dll
+C:\Users\vanca\Desktop\Soap Sevice\bin\Google.Protobuf.xml
+C:\Users\vanca\Desktop\Soap Sevice\bin\MySql.Data.xml
+C:\Users\vanca\Desktop\Soap Sevice\bin\Renci.SshNet.xml

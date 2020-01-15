@@ -1,78 +1,64 @@
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
 
-## About Laravel
+## Over het project
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Dit project is gemaakt voor het vak Cloud computing en toepassingen aan de Uhasselt. Dit project bevat de volgende componenten
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- Centrale Laravel web applicatie
+- REST Api service in laravel
+- Flask REST API in docker
+- SOAP Api in .net framework
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Het centrale thema van het project is een online duikboek. Dit geeft de user de mogelijkheid om online een logboek bij te houden van zijn/haar duiken.
 
-## Learning Laravel
+## Centrale Laravel applicatie
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+De centrale laravel applicatie bevat volgende functies:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- Authenticatie (elke duiker heeft zijn eigen account)
+- De mogelijkheid om duiken te updaten/verwijderen/toevoegen aan het logboek
+- Een pagina om alle behaalde duikgraden van de duiker te bewaren
+- Een review page waar duikers reviews kunnen posten en opvragen van duiklocaties
+- Mogelijkheid om locaties op een kaart te bekijken
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Laravel REST Api
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
+Deze api geeft de mogelijkheid om reviews van duikplaatsen te posten naar een database en reviews op te vragen van een bepaalde locatie.
 
-## Contributing
+- /postGradesBook
+Update het gradesbook met de inkomende data.
+POST
+Input arguments: id as int (id van de duiker).
+				 eenster,tweester,driester,vierster,eensterI,tweesterI,basicNitrox,advancedNitrox,basicTrimix as string (alle mogelijke duikgraden).
+Input arguments kunnen null zijn buiten het id.
+Geen retrun. 
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- /getGradesBook
+Vraagt Gradesbook op van een duiker.
+GET
+Input argument id als int (id van de duiker).
+Input argument kan niet null zijn.
+return Json array met booleaanse waarden of graad al dan niet behaald is.
 
-## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Flask REST Api
 
-## Security Vulnerabilities
+Deze api geeft de mogelijkheid om reviews te posten naar de database of reviews van een bepaalde locatie op te vragen. Deze api draait in een docker containter.
+Documentatie van api kan worden gevonden op /docs/api
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## SOAP APi in .net
 
-## License
+Deze api geeft statistische data van de duikboek terug. Er is de mogelijkheid om het totaal aantal duiken en totaal aantal duikuren van een duiker op te vragen?
+Doculentatie van de api kan worden gevonden op de url van de api.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Sources
+
+Laravel leren gebruiken: https://www.youtube.com/watch?v=EU7PRmCpx-0&list=PLillGF-RfqbYhQsN5WMXy6VsDMKGadrJ-
+Flask leren gebruiken: https://www.youtube.com/watch?v=s_ht4AKnWZg
+Flask in docker zetten: https://medium.com/@doedotdev/docker-flask-a-simple-tutorial-bbcb2f4110b5
+Soap client in aws plaatsen: https://www.youtube.com/watch?v=pgRzdZeNxD8&t=1346s
+Google maps autocomplete Api gebruiken: https://developers.google.com/maps/documentation/javascript/places-autocomplete
+Google maps in javacript oproepen: https://developers.google.com/maps/documentation/javascript/places-autocomplete
+
