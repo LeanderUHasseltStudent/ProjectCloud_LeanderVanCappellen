@@ -28,19 +28,19 @@ De centrale laravel applicatie bevat volgende functies:
 Deze api geeft de mogelijkheid om reviews van duikplaatsen te posten naar een database en reviews op te vragen van een bepaalde locatie.
 
 /postGradesBook
--Update het gradesbook met de inkomende data.
--POST
--Input arguments: id as int (id van de duiker); 
+- Update het gradesbook met de inkomende data.
+- POST
+- Input arguments: id as int (id van de duiker); 
 eenster,tweester,driester,vierster,eensterI,tweesterI,basicNitrox,advancedNitrox,basicTrimix as string (alle mogelijke duikgraden).
--Input arguments kunnen null zijn buiten het id.
--Geen retrun. 
+- Input arguments kunnen null zijn buiten het id.
+- Geen retrun. 
 
 /getGradesBook
--Vraagt Gradesbook op van een duiker.
--GET
--Input argument id als int (id van de duiker).
--Input argument kan niet null zijn.
--return Json array met booleaanse waarden of graad al dan niet behaald is.
+- Vraagt Gradesbook op van een duiker.
+- GET
+- Input argument id als int (id van de duiker).
+- Input argument kan niet null zijn.
+- return Json array met booleaanse waarden of graad al dan niet behaald is.
 
 
 ## Flask REST Api
@@ -55,10 +55,10 @@ Doculentatie van de api kan worden gevonden op de api server.
 
 ## Sources
 
--Laravel leren gebruiken: https://www.youtube.com/watch?v=EU7PRmCpx-0&list=PLillGF-RfqbYhQsN5WMXy6VsDMKGadrJ-
--Flask leren gebruiken: https://www.youtube.com/watch?v=s_ht4AKnWZg
--Flask in docker zetten: https://medium.com/@doedotdev/docker-flask-a-simple-tutorial-bbcb2f4110b5
--Soap client in aws plaatsen: https://www.youtube.com/watch?v=pgRzdZeNxD8&t=1346s
--Google maps autocomplete Api gebruiken: https://developers.google.com/maps/documentation/javascript/places-autocomplete
--Google maps in javacript oproepen: https://developers.google.com/maps/documentation/javascript/places-autocomplete
+- Laravel leren gebruiken: https://www.youtube.com/watch?v=EU7PRmCpx-0&list=PLillGF-RfqbYhQsN5WMXy6VsDMKGadrJ-
+- Flask leren gebruiken: https://www.youtube.com/watch?v=s_ht4AKnWZg
+- Flask in docker zetten: https://medium.com/@doedotdev/docker-flask-a-simple-tutorial-bbcb2f4110b5
+- Soap client in aws plaatsen: https://www.youtube.com/watch?v=pgRzdZeNxD8&t=1346s
+- Google maps autocomplete Api gebruiken: https://developers.google.com/maps/documentation/javascript/places-autocomplete
+- Google maps in javacript oproepen: https://developers.google.com/maps/documentation/javascript/places-autocomplete
 
