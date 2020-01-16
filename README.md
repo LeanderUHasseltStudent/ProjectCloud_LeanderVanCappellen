@@ -34,7 +34,7 @@ Deze api geeft de mogelijkheid om reviews van duikplaatsen te posten naar een da
 id as int (id van de duiker)  
 eenster,tweester,driester,vierster,eensterI,tweesterI,basicNitrox,advancedNitrox,basicTrimix as string (alle mogelijke duikgraden).
 - Input arguments kunnen null zijn buiten het id.  
-- Alle input argumenten worden meegegeven in de url in bovensstaande volgorde gescheiden door een \.
+- Alle input argumenten worden meegegeven in de url in bovensstaande volgorde gescheiden door een /.
 - Voorbeeld input waar alle graden behaald zijn: /postGradesBook/1/1 ster/2 ster/3 ster/4 ster/1 ster instructeur/2 ster instructeur/basis nitrox/geavanceerde nitrox/basis trimix
 - Voorbeeld input waar geen enkele graad behaald is: /postGradesBook/1/////////
 - Geen retrun. 
