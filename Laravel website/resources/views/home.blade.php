@@ -6,7 +6,7 @@
         <div class="card">
             <div class="card-body">
                 <h3>Aantal duiken: {{$aantalDuiken}}</h3>
-                <h3>Aantal duikuren: {{$aantalDuikuren}}</h3>
+                <h3>Aantal duikminuten: {{$aantalDuikuren}}</h3>
             </div>
         </div>
     </div>

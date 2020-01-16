@@ -26,13 +26,13 @@
                     </div>
                     {{Form::submit('Submit', ['class'])}}
                     {!! Form::close() !!}
-                    
+                </div>
+                <div class="card-body">
                     {!! Form::open(['url' => '/reviews/createReview/lookMap','method'=>'post', 'target'=>"_blank"]) !!}
                     <div class="form-group">
-                        {{Form::label('locatie', 'Locatie')}}
+                        {{Form::submit('Zie kaart', ['class'])}}
+                        {{Form::text('locatie', '', ['class' => 'form-control', 'placeholder' => 'Locatie'])}}
                     </div>
-                    {{Form::submit('Zie kaart', ['class'])}}
-                    {{Form::text('locatie', '', ['class' => 'form-control', 'placeholder' => 'Locatie'])}}
                     {!! Form::close() !!}
                 </div>
             </div>

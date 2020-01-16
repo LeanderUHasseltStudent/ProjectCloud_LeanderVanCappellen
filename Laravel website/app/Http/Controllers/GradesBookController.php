@@ -33,12 +33,12 @@ class GradesBookController extends Controller
             $gradesBook = new GradesBook;
           
             $gradesBook->user_id = auth()->user()->id;
-            $gradesBook->_1ster = false;
-            $gradesBook->_2ster = false;
-            $gradesBook->_3ster = false;
-            $gradesBook->_4ster = false;
-            $gradesBook->_1sterI = false;
-            $gradesBook->_2sterI = false;
+            $gradesBook->eenster = false;
+            $gradesBook->tweester = false;
+            $gradesBook->driester = false;
+            $gradesBook->vierster = false;
+            $gradesBook->eensterI = false;
+            $gradesBook->tweesterI = false;
             $gradesBook->basicNitrox = false;
             $gradesBook->advancedNitrox = false;
             $gradesBook->basicTrimix = false;

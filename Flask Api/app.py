@@ -25,6 +25,7 @@ class postReview(Resource):
 		@@@
 		#### args
 
+		Inserts review into database.
 		Input is given as a json array.
 
 		| args | nullable | type |
@@ -47,7 +48,8 @@ class getReview(Resource):
 		"""
 		@@@
 		#### args
-
+		
+		Retrieves reviews from the database of the given location.
 		Input is given as a json array.
 
 		| args | nullable | type |
