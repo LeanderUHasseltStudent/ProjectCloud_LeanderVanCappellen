@@ -30,17 +30,23 @@ Deze api geeft de mogelijkheid om reviews van duikplaatsen te posten naar een da
 /postGradesBook
 - Update het gradesbook met de inkomende data.
 - POST
-- Input arguments: id as int (id van de duiker); 
+- Input arguments:  
+id as int (id van de duiker)  
 eenster,tweester,driester,vierster,eensterI,tweesterI,basicNitrox,advancedNitrox,basicTrimix as string (alle mogelijke duikgraden).
-- Input arguments kunnen null zijn buiten het id.
+- Input arguments kunnen null zijn buiten het id.  
+- Alle input argumenten worden meegegeven in de url in bovensstaande volgorde gescheiden door een \.
+- Voorbeeld input waar alle graden behaald zijn: /postGradesBook/1/1 ster/2 ster/3 ster/4 ster/1 ster instructeur/2 ster instructeur/basis nitrox/geavanceerde nitrox/basis trimix
+- Voorbeeld input waar geen enkele graad behaald is: /postGradesBook/1/////////
 - Geen retrun. 
 
 /getGradesBook
 - Vraagt Gradesbook op van een duiker.
 - GET
 - Input argument id als int (id van de duiker).
+- Input argument wordt meegegeven in de url.
 - Input argument kan niet null zijn.
 - return Json array met booleaanse waarden of graad al dan niet behaald is.
+- return voorbeeld: {['eenster':0],['tweester':0],['driester':1],['vierster':1],['eensterI':0],['tweesterI':0],['basicNitrox':1],['advancedNitrox':1],['basicTrimix':0]}
 
 
 ## Flask REST Api
